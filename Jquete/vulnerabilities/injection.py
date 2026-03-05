@@ -47,7 +47,6 @@ def generate_rsa_keypair():
 
 
 def test_jku_injection(scanner) -> None:
-    """Test JKU header injection"""
     from colorama import Fore, Style
     import jwt
 
@@ -107,7 +106,6 @@ def test_jku_injection(scanner) -> None:
 
 
 def test_jwk_injection(scanner) -> None:
-    """Test JWK embedded key injection"""
     from colorama import Fore, Style
     import jwt
 
@@ -150,7 +148,6 @@ def test_jwk_injection(scanner) -> None:
 
 
 def test_kid_injection(scanner) -> None:
-    """Test KID header injection (path traversal, SQL, command)"""
     from colorama import Fore, Style
     import jwt
 
@@ -269,7 +266,6 @@ def test_kid_injection(scanner) -> None:
 
 
 def test_jwks_cache_poisoning(scanner) -> None:
-    """Test JWKS cache poisoning"""
     from colorama import Fore, Style
     import jwt
 
@@ -313,7 +309,6 @@ def test_jwks_cache_poisoning(scanner) -> None:
 
 
 def test_jwk_missing_alg(scanner) -> None:
-    """Test JWK missing alg confusion"""
     from colorama import Fore, Style
     import jwt
 
