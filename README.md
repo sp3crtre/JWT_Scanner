@@ -1,5 +1,7 @@
 # JWT Scanner
 
+<img src="logo.png" alt="logo"/>
+
 A comprehensive JWT vulnerability scanner with attack chain detection and exploitation capabilities.
 
 ## Installation
