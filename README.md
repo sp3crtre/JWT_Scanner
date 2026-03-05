@@ -11,12 +11,12 @@ pip install pyjwt requests colorama cryptography websocket-client
 ## Basic Usage
 
 ```bash
-python python -m jwtscanner -u <target_url> --jwt <jwt_token>
+python python -m jquete-u <target_url> --jwt <jwt_token>
 ```
 
 ## Usage
 ```bash
-python python -m jwtscanner -h
+python python -m jquete -h
 ```
 
 ## Command-Line Options
@@ -77,31 +77,31 @@ python python -m jwtscanner -h
 ### Basic Scan
 
 ```bash
-python python -m jwtscanner -u https://target.com/api --jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+python python -m jquete -u https://target.com/api --jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 ### Full Scan with Attack Chains
 
 ```bash
-python python -m jwtscanner -u https://target.com/admin --jwt <token> --level 3 --risk 3 --chains
+python python -m jquete -u https://target.com/admin --jwt <token> --level 3 --risk 3 --chains
 ```
 
 ### Scan with Exploitation
 
 ```bash
-python python -m jwtscanner -u https://target.com/admin --jwt <token> --exploit --impersonate "sub=admin,role=admin"
+python python -m jquete -u https://target.com/admin --jwt <token> --exploit --impersonate "sub=admin,role=admin"
 ```
 
 ### Scan with Proxy
 
 ```bash
-python python -m jwtscanner -u https://target.com/api --jwt <token> --proxy http://127.0.0.1:8080 --verbose
+python python -m jquete -u https://target.com/api --jwt <token> --proxy http://127.0.0.1:8080 --verbose
 ```
 
 ### Output to JSON
 
 ```bash
-python python -m jwtscanner -u https://target.com/api --jwt <token> -o results.json
+python python -m jquete -u https://target.com/api --jwt <token> -o results.json
 ```
 
 ## Wordlist Support
