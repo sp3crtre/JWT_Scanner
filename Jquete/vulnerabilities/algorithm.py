@@ -58,7 +58,6 @@ def test_none_algorithm(scanner) -> None:
 
 
 def test_weak_secret(scanner) -> None:
-    """Test if JWT uses weak HMAC secret"""
     from colorama import Fore, Style
     import jwt
 
@@ -103,7 +102,6 @@ def test_weak_secret(scanner) -> None:
 
 
 def test_algorithm_confusion(scanner) -> None:
-    """Test algorithm confusion (RS256 -> HS256)"""
     from colorama import Fore, Style
     import jwt
 
@@ -152,7 +150,6 @@ def test_algorithm_confusion(scanner) -> None:
 
 
 def test_signature_removal(scanner) -> None:
-    """Test if server accepts tokens with missing signature"""
     from colorama import Fore, Style
 
     print(f"\n{Fore.YELLOW}[*] Testing signature removal...{Style.RESET_ALL}")
@@ -190,7 +187,6 @@ def test_signature_removal(scanner) -> None:
 
 
 def test_unknown_algorithm(scanner) -> None:
-    """Test unknown algorithm handling"""
     from colorama import Fore, Style
     from ..constants import UNKNOWN_ALG_PAYLOADS
 
