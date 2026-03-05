@@ -10,7 +10,6 @@ from ..constants import OAUTH2_TOKEN_ENDPOINT_PATH, TYPE_CONFUSION_CLAIMS
 
 
 def test_expiration(scanner) -> None:
-    """Test token expiration claims"""
     from colorama import Fore, Style
 
     print(f"\n{Fore.YELLOW}[*] Testing expiration claims...{Style.RESET_ALL}")
@@ -59,7 +58,6 @@ def test_expiration(scanner) -> None:
 
 
 def test_audience_issuer(scanner) -> None:
-    """Test audience and issuer validation bypass"""
     from colorama import Fore, Style
     import jwt
 
@@ -159,7 +157,6 @@ def test_audience_issuer(scanner) -> None:
 
 
 def test_claim_type_confusion(scanner) -> None:
-    """Test claim type confusion"""
     from colorama import Fore, Style
 
     print(
