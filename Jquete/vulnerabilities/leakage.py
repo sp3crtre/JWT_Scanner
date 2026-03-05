@@ -9,7 +9,6 @@ from ..constants import CROSS_SYSTEM_PATTERNS
 
 
 def test_websocket_event_leak(scanner) -> None:
-    """Test WebSocket event leak"""
     from colorama import Fore, Style
     import websocket
 
@@ -72,7 +71,6 @@ def test_websocket_event_leak(scanner) -> None:
 
 
 def test_unauth_token_polling(scanner) -> None:
-    """Test unauthenticated token polling"""
     from colorama import Fore, Style
 
     print(
@@ -114,7 +112,6 @@ def test_unauth_token_polling(scanner) -> None:
 
 
 def test_cross_system_leakage(scanner) -> None:
-    """Test cross-system JWT leakage"""
     from colorama import Fore, Style
 
     print(f"\n{Fore.YELLOW}[*] Testing cross-system leakage...{Style.RESET_ALL}")
